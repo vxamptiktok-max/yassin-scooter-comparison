@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooter Selection & Comparison System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="project-title">Scooter Selection & Comparison System</h1>
+            <div class="student-info">
+                <p class="student-name">Student Name: Yassin Mohsen – 11C</p>
+                <p class="teacher-name">Mr. Fawzy El Top</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="selection-section" class="section">
+            <div class="container">
+                <h2 class="section-title">Select a Scooter</h2>
+                
+                <div class="objective">
+                    <p>Objective: Click all 3 scooters to unlock full comparison</p>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-label">Progress</div>
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <div class="progress-text">
+                        <span id="viewed-count">0</span> / 3 Viewed
+                    </div>
+                </div>
+
+                <div id="scooter-grid" class="scooter-grid"></div>
+
+                <button id="comparison-btn" class="comparison-btn hidden" onclick="showComparison()">
+                    View Full Comparison
+                </button>
+            </div>
+        </section>
+
+        <section id="details-section" class="details-section hidden">
+            <div class="container">
+                <div class="details-close" onclick="closeDetails()">✕</div>
+                <div id="details-content" class="details-content"></div>
+            </div>
+        </section>
+
+        <section id="comparison-section" class="section hidden">
+            <div class="container">
+                <h2 class="section-title">Full Scooter Comparison</h2>
+                <div class="comparison-table-wrapper">
+                    <table id="comparison-table" class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Yamaha TMAX 560</th>
+                                <th>Zontes 350E</th>
+                                <th>Keeway Nexy 125</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Filled by JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <button class="back-btn" onclick="hideComparison()">Back to Selection</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>School Project • 2026 • Yassin Mohsen – 11C</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
