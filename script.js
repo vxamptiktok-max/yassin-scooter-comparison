@@ -1,9 +1,10 @@
-// script.js
+// script.js - FIXED IMAGE PATHS to match your GitHub root filenames
+
 const scooters = [
     {
         id: "yamaha",
         name: "Yamaha TMAX 560",
-        image: "./images/tmax.jpg",
+        image: "Yamaha TMAX scooter.jpg",
         specs: {
             engine: "562 cc parallel-twin, liquid-cooled, DOHC",
             horsepower: "47 hp @ 7,000 rpm",
@@ -31,7 +32,7 @@ const scooters = [
     {
         id: "zontes",
         name: "Zontes 350E",
-        image: "./images/zontes.jpg",
+        image: "Zontes 350E scooter.jpg",
         specs: {
             engine: "349 cc single-cylinder, liquid-cooled, SOHC 4-valve",
             horsepower: "37 hp @ 7,500 rpm",
@@ -59,7 +60,7 @@ const scooters = [
     {
         id: "keeway",
         name: "Keeway Nexy 125",
-        image: "./images/keeway.jpg",
+        image: "Keeway Nexy scooter.jpg",
         specs: {
             engine: "124.8 cc single-cylinder, liquid-cooled, DOHC 4-valve",
             horsepower: "12 hp @ 8,250 rpm",
@@ -209,7 +210,7 @@ function hideComparison() {
     document.getElementById('comparison-section').classList.add('hidden');
 }
 
-// Init
+// Initialize
 document.addEventListener('DOMContentLoaded', () => {
     renderScooterGrid();
     updateProgress();
